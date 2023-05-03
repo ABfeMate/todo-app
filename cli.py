@@ -14,6 +14,7 @@ if not os.path.exists("todos.txt"):
 with open("todos.txt", "r") as file:
     todos = file.readlines()
 
+#create date string with the correct format
 date_str = time.strftime("%Y-%m-%d")
 date_obj = datetime.strptime(date_str, "%Y-%m-%d")
 formatted_date = custom_date_format(date_obj)
